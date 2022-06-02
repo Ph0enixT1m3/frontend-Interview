@@ -57,8 +57,17 @@ input:not([type="checkbox"]) {
   color: #23262F;
 }
 input[type="password"] {
+  position: relative;
   letter-spacing: 7.5px;
   padding-left: 22px;
+  background-image: url(../img/eye.png);
+  background-repeat: no-repeat;
+  background-position: 96% center;
+}
+@media (max-width: 1100px) {
+  input[type="password"] {
+    background-image: url(../img/eye-slip.png);
+  }
 }
 input:not([type="checkbox"]).error {
   border-color: #D11A2A;
