@@ -40,12 +40,7 @@ input[type="password"] {
     position: relative;
     letter-spacing: 7.5px;
     padding-left: 22px;
-    background-image: url(../img/eye.png);
-    background-repeat: no-repeat;
-    background-position: 96% center;
-    @media (max-width: 1100px) {
-        background-image: url(../img/eye-slip.png);
-    }
+    padding-right: 40px;
 }
 input:not([type="checkbox"]).error {
     border-color: #D11A2A;
@@ -196,6 +191,31 @@ a {
         label {
             margin-bottom: 13px;
         }
+        .pass-wrap {
+            position: relative;
+            .open {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 16px;
+                width: 24px;
+                height: 24px;
+                background-image: url(../img/eye.png);
+                background-repeat: no-repeat;
+                background-position: 96% center;
+                transition: .3s;
+                cursor: pointer;
+                @media (max-width: 1100px) {
+                    background-image: url(../img/eye-slip.png);
+                }
+                &.active {
+                    background-image: url(../img/eye-open.png);
+                    @media (max-width: 1100px) {
+                        background-image: url(../img/eye-slip-open.png);
+                    }
+                }
+            }
+        } 
     }
 }
 .form-bg {
