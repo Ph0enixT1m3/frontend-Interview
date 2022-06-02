@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>frontend-Interview</title>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="form-content">
+            <form action="" class="form">
+                <h1 class="form_header">Регистрация</h1>
+                <div class="field-wrap-2">
+                    <div class="field-wrap-2_input">
+                        <label for="name">Имя <span class="req">*</span></label>
+                        <input type="text" id="name" name="name" value="Иван" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="field-wrap-2_input">
+                        <label for="lastname">Фамилия <span class="req">*</span></label>
+                        <input type="text" id="lastname" name="lastname" value="Иванов" placeholder="Ваша фамилия" required>
+                    </div>
+                </div>
+                <div class="field-wrap-2">
+                    <div class="field-wrap-2_input">
+                        <label for="email">Email <span class="req">*</span></label>
+                        <input type="text" id="email" name="email" value="email@gmail.com" placeholder="Ваш email" required>
+                    </div>
+                    <div class="field-wrap-2_input">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" value="+7 (995) 765 54 34" placeholder="Ваш телефон" required>
+                    </div>
+                </div>
+                <div class="field-wrap-1">
+                    <label for="pass">Пароль <span class="req">*</span></label>
+                    <input type="password" value="123456" placeholder="Ваш пароль">
+                </div>
+                <div class="field-wrap-1 field-wrap-1-last">
+                    <label for="pass">ИНН <span class="req">*</span></label>
+                    <input class="error" type="text" value="548782746" placeholder="Ваш пароль">
+                </div>
+                <div class="danger">
+                    Ваша компания уже зарегистрирована, пожалуйста обратитесь к менеджеру вашего аккаунта или <a href="#">напишите нам</a>
+                </div>
+                <div class="note">
+                    <span class="req">*</span> - обязательные поля
+                </div>
+                <div class="polit">
+                    <input type="checkbox" class="checkbox-custom" id="agree" checked>
+                    <label for="agree">Да, я хочу получать письма с новостями и предложениями</label>
+                </div>
+                <input type="submit" value="Далее" class="btn-submit">
+            </form>
+        </div>
+        <div class="form-bg">
+            <img src="assets/img/bg.jpg" alt="Регистрация">
+        </div>
+    </div>
+</body>
+</html>
